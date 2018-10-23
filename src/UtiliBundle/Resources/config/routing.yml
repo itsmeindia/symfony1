@@ -1,0 +1,9 @@
+utili_homepage:
+    path:     /base
+    defaults: { _controller: UtiliBundle:Default:index }
+ajout_admin:
+    path:     /ajout-admin
+    defaults: { _controller: UtiliBundle:Admin:ajout }
+utilisateur_path:
+    resource:   "@UtiliBundle/Resources/config/routing/util.yml"
+    prefix: /util

@@ -1,0 +1,4 @@
+services:
+#    utili.example:
+#        class: UtiliBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

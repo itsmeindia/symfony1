@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>{% block title %}Gestion Utilisateur{% endblock %}</title>
+
+    {% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('bundles/utili/css/ms.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" />
+
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- Static navbar -->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+                <a class="navbar-brand" href="#"><img src="{{ asset('bundles/utili/images/i1.png') }}" class="img-responsive brand"></a>
+
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+
+                    <li class="active"><a href="#">Gestion Utilisateur</a></li>
+
+                    <li><a href="#">Authentification</a></li>
+
+                    <li><a href="#">Nos Utilisateurs</a></li>
+
+
+                    <li><a href="#">A propos</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!--/.nav-collapse -->
+
+            <!--/.container-fluid -->
+
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+    </div>
+
+    <div class="container block">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 pull-left ">
+
+                {% block body %}
+
+                <p class=" text-justify presentation lead">
+
+
+                </p>
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer" id="footer">
+
+            <div class="container">
+
+                <div class="row">
+
+​
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+​
+
+                        <i class="fa fa-map-marker fa-2x info" aria-hidden="true"></i><br/> 13 RUE X Marrakech Maroc
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+
+                        <i class="fa fa-envelope fa-2x info" aria-hidden="true"></i><br/>gestionutili@gmail.com
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+
+                        <i class="fa fa-phone fa-2x info" aria-hidden="true"></i><br/>12356712
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                        <ul class="social">
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-facebook">  </i> </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-twitter">   </i> </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-google-plus">   </i> </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-pinterest">   </i> </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!--/.row-->
+
+            </div>
+
+            <!--/.container-->
+
+        </div>
+
+        <!--/.footer-->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p class="text-center"> Copyright @UTILI 2018. All right reserved. </p>
+
+            </div>
+
+        </div>
+
+        <!--/.footer-bottom-->
+
+    </footer>
+
+​</body>
+
+</html>
+
+
+

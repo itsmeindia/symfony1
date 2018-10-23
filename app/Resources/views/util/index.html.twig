@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Utils list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Mail</th>
+                <th>Telephone</th>
+                <th>Ville</th>
+                <th>Service</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for util in utils %}
+            <tr>
+                <td><a href="{{ path('util_show', { 'id': util.id }) }}">{{ util.id }}</a></td>
+                <td>{{ util.nom }}</td>
+                <td>{{ util.prenom }}</td>
+                <td>{{ util.mail }}</td>
+                <td>{{ util.telephone }}</td>
+                <td>{{ util.ville }}</td>
+                <td>{{ util.service }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('util_show', { 'id': util.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('util_edit', { 'id': util.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('util_new') }}">Create a new util</a>
+        </li>
+    </ul>
+{% endblock %}

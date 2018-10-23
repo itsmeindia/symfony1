@@ -1,0 +1,24 @@
+util_index:
+    path:     /
+    defaults: { _controller: "UtiliBundle:Util:index" }
+    methods:  GET
+
+util_show:
+    path:     /{id}/show
+    defaults: { _controller: "UtiliBundle:Util:show" }
+    methods:  GET
+
+util_new:
+    path:     /new
+    defaults: { _controller: "UtiliBundle:Util:new" }
+    methods:  [GET, POST]
+
+util_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UtiliBundle:Util:edit" }
+    methods:  [GET, POST]
+
+util_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UtiliBundle:Util:delete" }
+    methods:  DELETE

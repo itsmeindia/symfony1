@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Util</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ util.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ util.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ util.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <td>{{ util.mail }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ util.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ util.ville }}</td>
+            </tr>
+            <tr>
+                <th>Service</th>
+                <td>{{ util.service }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('util_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('util_edit', { 'id': util.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
